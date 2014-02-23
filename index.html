@@ -6,6 +6,7 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
   </head>
 
@@ -24,25 +25,38 @@
 		        </button>
 	        </div>
 	        <div class="collapse navbar-collapse">
-	          	<ul class="nav navbar-nav">
-		            <li class="active"><a href="index.html">
-		            	<i class="fa fa-home fa-fw"></i>Home</a>
-		            </li>
-		            <li><a href="aboutus.html">
-		            	<i class="fa fa-group fa-fw"></i>About Us</a>
-		            </li>
-		            <li><a href="services.html">
-		            	<i class="fa fa-rocket fa-fw"></i>Services</a>
-		            </li>
-		            <li><a href="contactus.html">
-		            	<i class="fa fa-phone fa-fw"></i>Contact Us</a>
-		            </li>
-	          	</ul>
+		          	<ul class="nav navbar-nav">
+			            <li class="sidebar-brand active"><a href="index.html">
+			            	<i class="fa fa-home fa-fw"></i>Home</a>
+			            </li>
+			            <li><a href="#aboutus">
+			            	<i class="fa fa-group fa-fw"></i>About Us</a>
+			            </li>
+			            <li><a href="#services">
+			            	<i class="fa fa-rocket fa-fw"></i>Services</a>
+			            </li>
+			            <li><a href="#contactus">
+			            	<i class="fa fa-phone fa-fw"></i>Contact Us</a>
+			            </li>
+		          	</ul>
 	        </div><!--/.nav-collapse -->
         </div>
     </div>
+    <br><br><br>
+    <div id="top" class="header">
 
-    <hr class="featurette-divider">
+        <div class="vert-text">
+            <h1>R2(CM) IT Training Agency, Inc.</h1>
+            <h3>
+                <em> Great Opportunities awaits you!</em>
+                <br><br>
+            <a href="#top" class="btn btn-default btn-lg">Read More</a>
+        </div>
+    </div>
+    
+
+    <hr class="featurette-divider header">
+
         <div class="row featurette">
 	        <div class="col-md-7">
 	          <h2 class="featurette-heading">Want an opportunity?<br>
@@ -54,17 +68,18 @@
 	          Fusce dapibus, tellus ac cursus commodo.</p>
 	        </div>
 	        <div class="col-md-5">
-	          <img class="featurette-image img-responsive" 
+	          <img class="featurette-image img-circle img-responsive" 
 	               src="img/R2(CM).png" 
 	               alt="Generic placeholder image">
 	        </div>
-        </div>
+	    </div>
 
-      <hr class="featurette-divider">
+
+    <hr id="aboutus" class="featurette-divider">
 
       <div class="row featurette">
         <div class="col-md-5">
-          <img class="featurette-image img-responsive" 
+          <img class="featurette-image img-circle img-responsive" 
           	   src="img/img.jpg" 
           	   alt="Generic placeholder image">
         </div>
@@ -80,8 +95,9 @@
           </p>
         </div>
       </div>
+      
 
-      <hr class="featurette-divider">
+      <hr id="services" class="featurette-divider">
 
       <div class="row featurette">
         <div class="col-md-7">
@@ -95,9 +111,32 @@
           </p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive" 
+          <img class="featurette-image img-circle img-responsive" 
           	   src="img/img.jpg" 
           	   alt="Generic placeholder image">
+        </div>
+      </div>
+      
+      
+
+      <hr id="contactus" class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-5">
+          <img class="featurette-image img-circle img-responsive" 
+          	   src="img/img.jpg" 
+          	   alt="Generic placeholder image">
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Contact Us 
+          	<span class="text-muted">asdfgh</span>
+          </h2>
+          <p class="lead">
+          Donec ullamcorper nulla non metus auctor fringilla. 
+          Vestibulum id ligula porta felis euismod semper. 
+          Praesent commodo cursus magna, vel scelerisque nisl consectetur. 
+          Fusce dapibus, tellus ac cursus commodo.
+          </p>
         </div>
       </div>
       <hr class="featurette-divider">
@@ -105,6 +144,8 @@
 
 
     <div class="container">    
+
+    <hr class="featurette-divider">
   		<div class="row">
     		<div class="col-lg-10">
       			<div class="col-md-4">
@@ -153,7 +194,39 @@
   		</div>
 	</div>
 
-    <script src="js/jquery.js"></script>
+
+	<script>
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    </script>
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    </script>
+    <script>
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
+
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/holder.js"></script>
   </body>
