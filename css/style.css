@@ -20,6 +20,121 @@
 
 /* Colors Section
 =================================================================== */
+
+.video .cont {
+display: table-cell;
+vertical-align: middle;
+height: 100%;
+width: 100%;
+text-align: center;
+-webkit-transition: 1s;
+-moz-transition: 1s;
+-ms-transition: 1s;
+-o-transition: 1s;
+transition: 1s;
+opacity: 0;
+}
+
+.visible {
+opacity: 1 !important;
+}
+
+.video .sdf, .video .suys {
+font-size: 21px;
+color: #fff;
+text-transform: uppercase;
+font-weight: 100;
+margin: 20px 55px;
+-webkit-transition: 1s;
+-moz-transition: 1s;
+-ms-transition: 1s;
+-o-transition: 1s;
+transition: 1s;
+opacity: 0;
+}
+
+.video .play {
+display: inline-block;
+line-height: 59px;
+cursor: pointer;
+width: 67px;
+height: 67px;
+-webkit-border-radius: 100%;
+-moz-border-radius: 100%;
+border-radius: 100%;
+border: 4px white solid;
+background-color: transparent;
+outline: none;
+-webkit-transition: 0.4s;
+-moz-transition: 0.4s;
+-ms-transition: 0.4s;
+-o-transition: 0.4s;
+transition: 0.4s;
+position: relative;
+}
+
+.video .suys {
+font-size: 21px;
+color: #fff;
+text-transform: uppercase;
+font-weight: 100;
+margin: 20px 55px;
+-webkit-transition: 1s;
+-moz-transition: 1s;
+-ms-transition: 1s;
+-o-transition: 1s;
+transition: 1s;
+opacity: 0;
+}
+
+.video .suys {
+font-size: 28px;
+letter-spacing: -1px;
+}
+
+.presenation * {
+-moz-box-sizing: border-box !important;
+-webkit-box-sizing: border-box !important;
+box-sizing: border-box;
+font-family: proxima-nova, sans-serif !important;
+}
+
+.video .arrow {
+opacity: 0;
+border-bottom: none;
+background: rgba(0,0,0,0.6);
+display: block;
+width: 50px;
+height: 50px;
+position: absolute;
+bottom: 60px;
+left: 50%;
+margin-left: -20px;
+border-radius: 50%;
+color: rgba(255,255,255,0.8);
+line-height: 57px;
+-webkit-transition: 1s;
+-moz-transition: 1s;
+-ms-transition: 1s;
+-o-transition: 1s;
+transition: 1s;
+}
+
+.simple-block {
+text-align: left;
+background: #fff;
+padding: 155px 0;
+font-size: 100px;
+line-height: 44px;
+letter-spacing: -2px;
+color: #303336;
+}
+
+.holder {
+width: 1104px;
+margin: 0 auto;
+}
+
 .color.white {
 	background: #fff;
 	color: #414141;
@@ -129,12 +244,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 100px;
   line-height: 40px;
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 35px;
   line-height: 40px;
 }
 
