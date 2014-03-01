@@ -244,7 +244,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
+<<<<<<< HEAD
+  font-size: 65px;
+=======
   font-size: 100px;
+>>>>>>> eeef69003468ad27cfd7eb7eee4f689bd665aaed
   line-height: 40px;
 }
 
