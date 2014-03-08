@@ -31,6 +31,7 @@
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Boogaloo">
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Economica:700,400italic">
 	<link rel="icon" href="http://www.restaurator-muenchen.com/favicon.ico" />
+	<script type="text/javascript" src="js/video.js"></script>
 	<!-- end: CSS -->
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -56,13 +57,13 @@
 					<div class="navbar navbar-fixed-top">
 			    		<div class="navbar-inner">
 			          		<a class="btn btn-navbar btnOverlay" data-toggle="collapse" data-target=".nav-collapse">
-			            		menu
+			            		R2(CM)
 			          		</a>
 			          		<div class="nav-collapse collapse">
 			            		<ul class="nav">
 									<li><a href="#" class="home">Home</a></li>
 			              			<li><a href="#" class="services">Services</a></li>
-			              			<li><a href="#" class="followus">Follow Us</a></li>
+			              			<li><a href="#" class="followus">Social</a></li>
 									<li><a href="#" class="about">About Us</a></li>
 									<li><a href="#" class="team">Team</a></li>
 									<li><a href="#" class="contact">Contact</a></li>
@@ -84,22 +85,20 @@
 	</header>
 	<!--end: Header-->
 	<!-- start: 1st Page - Home -->
-	<div id="home">
+	<divid="home">
 
-	<div id="company">
-		<br><br><br><center><b><h1> R2(CM) IT Training Agency, Inc. </h1></b></center></br>
-	</div>
+		<div id="bgVideo" class="background"><video id="video_background" preload="auto" autoplay="autoplay" loop="loop" style="top: -72px; left: 0px; bottom: 0px; right: 0px; z-index: -100; width: 1366px; height: 768.5768321513002px;">
+		<div class="container">
+    		<video id="video" width="770" height="882" onclick="play();">
+        		<source src="video/Motion.mp4" type="video/mp4" />
+    		</video>
+    		<div id="custom-message">R2(CM)IT Training Agency, Inc.</div>
+</div>
+		<source src="http://designmodo.com/storage/startuppreview.mp4" type="video/mp4"><source src="http://designmodo.com/storage/startuppreview.ogg" type="video/ogg"><source src="http://designmodo.com/storage/startuppreview.webm" type="video/webm">bgvideo</video></div>
 
-		<div id="bgVideo" class="background"><video id="video_background" preload="auto" autoplay="autoplay" loop="loop" style="top: -72px; left: 0px; bottom: 0px; right: 0px; z-index: -100; width: 1366px; height: 768.5768321513002px;"><source src="http://designmodo.com/storage/startuppreview.mp4" type="video/mp4"><source src="http://designmodo.com/storage/startuppreview.ogg" type="video/ogg"><source src="http://designmodo.com/storage/startuppreview.webm" type="video/webm">bgvideo</video></div>
+
 		
-		<div class="holder">
-            <div class="cont visible">
-                <span class="sdf visible"><strong>R2(CM)</strong> IT Training Agency, Inc.</span>
-                <a href="https://vimeo.com/designmodo/startup" target="_blank" class="play"><span class="fui-play"></span></a>   
-                <span class="suys visible"><strong>Great Opportunities</strong> awaits you</span>
-                <a class="arrow visible" href="#overview"><span aria-hidden="true" class="icn_arrow"></span></a>
-            </div>
-        </div>
+		
 
 	</div>
 	<!-- end: 1st Page - Home -->
@@ -192,18 +191,17 @@
 
 				<div id="page-title-inner">
 
-					<h2><span>Follow Us</span></h2>
+					<h2><span>Social</span></h2>
 				</div>	
 
 			</div>
-			
+
 			<div class="row-fluid">
-	
         		<div class="span4">
           			<div class="icons-box">
-						<i class="fa fa-facebook fa-5x"></i>
-						<a href="#facebook"><h3>Facebook</h3></a>
-						
+							<i class="fa fa-facebook fa-5x"></i>
+							<a href="https://www.facebook.com/gor2cm"><h3>Facebook</h3></a>
+	
 						<div class="clearfix"></div>
 					</div>
         		</div>
@@ -211,7 +209,7 @@
         		<div class="span4">
           			<div class="icons-box">
 						<i class="fa fa-twitter"></i>
-						<a href="#twitter"><h3>Twitter</h3></a>
+						<a href="https://twitter.com/R2CM_IT"><h3>Twitter</h3></a>
 						
 						<div class="clearfix"></div>
 					</div>
@@ -233,7 +231,7 @@
         		<div class="span4">
           			<div class="icons-box">
 						<i class="fa fa-linkedin fa-5x"></i>
-						<a href="#linkedin"><h3>LinkedIn</h3></a>
+						<a href="http://www.linkedin.com/profile/view?id=329163620&trk=nav_responsive_tab_profile"><h3>LinkedIn</h3></a>
 						
 						<div class="clearfix"></div>
 					</div>

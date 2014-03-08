@@ -21,22 +21,32 @@
 /* Colors Section
 =================================================================== */
 
-.video .cont {
-display: table-cell;
-vertical-align: middle;
-height: 100%;
-width: 100%;
-text-align: center;
--webkit-transition: 1s;
--moz-transition: 1s;
--ms-transition: 1s;
--o-transition: 1s;
-transition: 1s;
-opacity: 0;
+.video {
+    position:relative;
+    z-index:-1;
 }
 
+#custom-message {
+    position:absolute;
+    color: rgb(230, 200, 98);
+    z-index:1;      
+}
+
+
 .visible {
-opacity: 1 !important;
+opacity: 1;
+}
+
+.container { position:relative; }
+.container video {
+    position:relative;
+    z-index:0;
+}
+.overlay {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1;
 }
 
 .video .sdf, .video .suys {
@@ -51,6 +61,10 @@ margin: 20px 55px;
 -o-transition: 1s;
 transition: 1s;
 opacity: 0;
+}
+
+.visible {
+opacity: 1 !important;
 }
 
 .video .play {
@@ -136,7 +150,7 @@ margin: 0 auto;
 }
 
 .color.white {
-	background: #fff;
+	background: #CAE4F1;
 	color: #414141;
 }
 
@@ -149,7 +163,7 @@ margin: 0 auto;
 }
 
 .color.white h2 span {
-	background: #fff !important;
+	background: #CAE4F1 !important;
 	color: #414141 !important;
 }
 
@@ -175,16 +189,16 @@ margin: 0 auto;
 
 
 .color.blue {
-	background: #5bc2ce;
+	background: #0588BC;
 	color: #fff;
 }
 
 .color.blue i {
-	color: #5bc2ce;
+	color: #0588BC;
 }
 
 .color.blue h2 span{
-	background: #5bc2ce;
+	background: #0588BC;
 }
 
 .color.blue.transparent {
@@ -244,16 +258,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-<<<<<<< HEAD
-  font-size: 65px;
-=======
-  font-size: 100px;
->>>>>>> eeef69003468ad27cfd7eb7eee4f689bd665aaed
+  font-size: 75px;
   line-height: 40px;
 }
 
 h2 {
-  font-size: 35px;
+  font-size: 55px;
   line-height: 40px;
 }
 
